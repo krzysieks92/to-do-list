@@ -1,0 +1,185 @@
+body{
+	text-align: center;
+	margin:0;
+	padding: 80px 0 0 0;
+	background: #edf0f1;
+}
+button:hover{
+	cursor:pointer;
+}
+header{
+	box-sizing: border-box;
+	width: 100%;
+	height: 80px;
+	position: fixed;
+	top:0;
+	left:0;
+	padding: 15px;
+	background-color:#25b99a;
+	text-align: center;
+	z-index: 5;
+	box-shadow: 0px 2px 4px rgba(44,62,80,0.15);
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	}
+header input{
+	display:block;
+	box-sizing: border-box;
+	width: 100%;
+	height: 50px;
+	float: left;
+	margin:0;
+	padding: 0 60px 0 0;
+	color:#fff;
+	text-indent: 20px;
+	background-color: rgba(255,255,255,0.2);
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+	border:0px;
+	box-shadow: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms--appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+header input::-webkit-input-placeholder{
+	color: rgba(255,255,255,0.75);
+}
+header input::-moz-input-placeholder{
+	color: rgba(255,255,255,0.75);
+}
+header input:-ms-input-placeholder{
+	color: rgba(255,255,255,0.75);
+}
+header input:-moz-input-placeholder{
+	color: rgba(255,255,255,0.75);
+}
+header button{
+	width:50px;
+	height:50px;
+	background-color:#fff;
+	position: absolute;
+	top:15px;
+	right:15px;
+	border:0;
+	border-radius:25px;
+	z-index:2;
+	box-shadow: none;
+	outline: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms--appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+.list-container{
+	margin:0 auto;
+	padding:15px;
+}
+.list{
+	list-style-type: none;
+	width:100%;
+	padding:0;
+}
+.list>li{
+	background-color: #fff;
+	min-height:50px;
+	border-radius: 5px;
+	box-shadow: 0 1px 2px rgba(44,62,80,0.10);
+	margin-bottom:10px;
+	position: relative;
+	padding:14px 100px 14px 14px;
+	line-height:22px;
+	width:100%;
+	box-sizing: border-box;
+}
+.list li:last-of-type{
+	margin:0;
+}
+.list li .buttons{
+	width:100px;
+	height: 50px;
+	position: absolute;
+	top:0;
+	right:0;
+}
+.list li .buttons button{
+	height: 50px;
+	width: 50px;
+	background: none;
+	position:relative;
+	float: left;
+	border:none;
+	box-shadow:none;
+	outline:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms--appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+.list li .buttons button:last-of-type:before{
+	content:'';
+	width:1px;
+	height:30px;
+	position:absolute;
+	top:10px;
+	left:0;
+	background: #edf0f1;
+}
+.list#completed{
+	position:relative;
+	padding:60px 0 0 0;
+}
+.list#completed:before{
+	content:'';
+	width:150px;
+	height:1px;
+	background:#d8e5e0;
+	position:absolute;
+	top:20px;
+	left:50%;
+	margin:0 0 0 -75px;
+}
+.list#completed:after,
+.list#uncompleted:after{
+	width: 100%;
+	color: #aaa;
+	text-align: center;
+	margin-right:15px;
+}
+.bin, .confirm{
+	height: 22px;
+	width: 22px;
+	border:none;
+	box-shadow:none;
+	outline:none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms--appearance: none;
+	-o-appearance: none;
+	appearance: none;
+}
+
+.bin:hover{
+	fill: #db0d0d;
+}
+#uncompleted .confirm{
+	fill:#db0d0d;
+}
+#uncompleted .confirm:hover{
+	fill:#23ce2b;
+}
+#completed .confirm{
+	fill:#23ce2b;
+}
+#completed .confirm:hover{
+	fill:#db0d0d;
+}
+.confirm:hover{
+	fill: #23ce2b;
+}
